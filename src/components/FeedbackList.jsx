@@ -17,7 +17,7 @@ const FeedbackList = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
             >
-              <FeedbackItem key={feed.id} {...feed} />
+              <FeedbackItem key={feed.id} feed={feed} />
             </motion.div>
           );
         })}
